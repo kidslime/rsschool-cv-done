@@ -1,1 +1,2 @@
-# rsschool-cv
+# rsschool
+Deploy: https://kidslime.github.io/rsschool-cv/cv
