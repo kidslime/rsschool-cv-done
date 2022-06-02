@@ -38,5 +38,14 @@ function jaden(str){
     return newStr;
 }
 ```
+***
+## Education
+* University: Irkutsk National Research Technical University, Information Technology major
+* Courses:
+    * [CS50's Web Programming](https://www.youtube.com/watch?v=Nn7EX3zkGUo&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu) 
+    * [Stepik: Generation Python](https://stepik.org/course/58852/syllabus) 
 
 ***
+## Languages:
+* English - Pre-intermediate
+* Russian - Native
