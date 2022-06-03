@@ -1,2 +1,2 @@
 # rsschool
-Deploy: https://kidslime.github.io/rsschool-cv/cv
+Deploy: https://kidslime.github.io/rsschool-cv/
