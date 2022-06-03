@@ -1,3 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.layout-2-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    background-color: #5C54A4;
+    padding: 20px;
+}
+
+.right-side {
+    background-color: #fff;
+    width: 40%;
+}
+
+.ico {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.ico__phone {
+    background-image: url('assets/Vector.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+}
+
+.skills-list {
+    overflow: hidden;
+}
+
+.skill-list__item {
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+}
+
+.skill-list__item::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 15px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: #A9A7D0;
+    border-radius: 10px;
+}
+
+.skill-list__item::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 15px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.skill-list__item_html::after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 80%;
+    }
+}
+
+.skill-list__item_css::after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 70%;
+    }
+}
+
+.skill-list__item_js::after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 40%;
+    }
+}
+
+.skill-list__item_git::after {
+    animation-name: git;
+}
+
+@keyframes git {
+    to {
+        width: 50%;
+    }
+}
+
+.skill-list__item_figma::after {
+    animation-name: figma;
+}
+
+@keyframes figma {
+    to {
+        width: 30%;
+    }
 }
