@@ -10,6 +10,10 @@ a {
     color: #fff;
 }
 
+ul {
+    list-style-type: none;
+}
+
 body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
@@ -43,7 +47,7 @@ h1::after {
 
 .section__heading {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -141,18 +145,56 @@ h1::after {
 
 .ico {
     display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .ico__phone {
-    background-image: url('assets/Vector.svg');
+    background-image: url('assets/phone.svg');
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
 }
 
-.social-link {
+.ico__location {
+    background-image: url('assets/location.svg');
+    background-repeat: no-repeat;
+}
+
+.ico__mail {
+    background-image: url('assets/mail.svg');
+    background-repeat: no-repeat;
+}
+
+.ico__discord {
+    background-image: url('assets/discord.svg');
+    background-repeat: no-repeat;
+}
+
+.ico__github {
+    background-image: url('assets/github.svg');
+    background-repeat: no-repeat;
+}
+
+.contact-list__item {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-list__item:last-child {
+    margin-bottom: 0px;
+}
+
+.contact-list__link {
+    color: #A9A7D0;
+}
+
+.contact-list__link:hover {
+    color: #fff;
+}
+
+.skills-list {
+    padding: 0 160px 0 0px;
 }
 
 .skill-list__item {
@@ -168,7 +210,7 @@ h1::after {
     left: 0;
     width: 100%;
     height: 15px;
-    background-color: #A9A7D0;
+    background-color: #162950;
     border-radius: 10px;
 }
 
@@ -179,7 +221,7 @@ h1::after {
     left: 0;
     width: 0;
     height: 15px;
-    background-color: #fff;
+    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
     border-radius: 10px;
     animation-duration: .7s;
     animation-timing-function: ease;
