@@ -45,6 +45,12 @@ h1::after {
     border-radius: 10px;
 }
 
+.profile {
+    flex-basis: 100%;
+    box-shadow: 0px 15px 10px -15px rgba(255, 255, 255, 0.8);
+    border: none;
+}
+
 .section__heading {
     text-transform: uppercase;
     font-size: 26px;
@@ -106,32 +112,32 @@ h1::after {
     margin: auto;
 }
 
+.main__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .navigation {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-.profile {
+.profile__wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-image: url(assets/background-image.png);
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-.content-wrapper {
-    box-shadow: 0 -15px 5px -15px rgba(255, 255, 255, 0.8);
+    padding: 50px 0;
+    margin: 50px 0;
+    border: none;
 }
 
 .section-wrapper {
     padding: 10px 30px;
-}
-
-.profile__wrapper {
-    padding: 50px 0;
-    margin: 50px 0;
 }
 
 .layout-2-column {
@@ -200,7 +206,12 @@ h1::after {
 .skill-list__item {
     position: relative;
     list-style: none;
-    margin: 50px 0;
+    margin-bottom: 50px;
+}
+
+section {
+    border-bottom: 2px solid #945DD6;
+    flex-basis: calc(50% - 30px);
 }
 
 .skill-list__item::before {
