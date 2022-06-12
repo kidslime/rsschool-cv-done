@@ -17,6 +17,7 @@ ul {
 body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
     font-weight: 400;
     line-height: 26px;
     background-color: #0F1624;
@@ -28,9 +29,12 @@ body {
 
 h1 {
     font-weight: 600;
-    font-size: 64px;
-    line-height: 96px;
+    font-size: 32px;
+    line-height: 50px;
     position: relative;
+    padding-bottom: 28px;
+    display: inline-block;
+    letter-spacing: 10px;
 }
 
 h1::after {
@@ -60,6 +64,10 @@ h1::after {
     margin: 20px 0;
 }
 
+.header {
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+}
+
 .header__navigation {
     padding: 20px 0;
 }
@@ -70,15 +78,18 @@ h1::after {
 }
 
 .job-title {
-    letter-spacing: 10px;
+    font-weight: 300;
+    font-size: 24px;
+    padding-top: 54px;
 }
 
 .navigation__link {
     font-weight: 300;
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 25px;
     text-transform: uppercase;
     position: relative;
+    color: #fff;
 }
 
 .navigation__link::after {
@@ -94,11 +105,7 @@ h1::after {
 
 .navigation__link:hover::after {
     width: 100%;
-}
-
-.job-title {
-    font-weight: 300;
-    font-size: 30px;
+    color: #fff;
 }
 
 .profile-img {
@@ -126,7 +133,7 @@ h1::after {
 
 .profile__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-image: url(assets/background-image.png);
     background-repeat: no-repeat;
@@ -134,10 +141,11 @@ h1::after {
     padding: 50px 0;
     margin: 50px 0;
     border: none;
+    gap: 0 287px;
 }
 
 .section-wrapper {
-    padding: 10px 30px;
+    padding: 30px 30px;
 }
 
 .layout-2-column {
@@ -191,11 +199,11 @@ h1::after {
     margin-bottom: 0px;
 }
 
-.contact-list__link {
+a {
     color: #A9A7D0;
 }
 
-.contact-list__link:hover {
+a:hover {
     color: #fff;
 }
 
@@ -287,4 +295,36 @@ section {
     to {
         width: 30%;
     }
+}
+
+.footer {
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+}
+
+.rs-link {
+    display: block;
+    width: 121px;
+    height: 45px;
+    background-image: url(./assets/rss.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.github-link {
+    margin-left: 20px;
+}
+
+.english {
+    border-bottom: none;
+}
+
+.education {
+    border-bottom: none;
 }
