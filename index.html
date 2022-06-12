@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">contacts</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">summary</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">skills </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">code </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">courses </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">projects </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">education </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">english </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div class="wrapper main__wrapper">
+            <section class="profile">
+                <div class="profile__wrapper">
+                    <div class="info">
+                        <h1>Dmitriy Pankin</h1>
+                        <p class="job-title">junior front-end developer</p>
+                    </div>
+                    <img class="profile-img" src="assets/avatar.png" alt="">
+                </div>
+
+            </section>
+
+            <section class="contacts section-wrapper">
+                <h2 class="section__heading">contact me</h2>
+
+                <ul class="contact-list">
+                    <li class="contact-list__item">
+                        <span class="ico ico__location"></span> Irkuts, Russia
+                    </li>
+                    <li class="contact-list__item">
+                        <span class="ico ico__discord"></span> Discord:&nbsp;
+                        <a class="contact-list__link" href=" https://discordapp.com/users/593016728192286720/">pankid#2722</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <span class="ico ico__mail"></span> Email:&nbsp;
+                        <a class="contact-list__link" href="mailto:pankindmp@ya.ru">pankindmp@ya.ru</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <span class="ico ico__github"></span> Github:&nbsp;
+                        <a class="contact-list__link" href="https://github.com/kidslime">kidslime</a>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="summary section-wrapper">
+                <h2 class="section__heading">summary</h2>
+                <p>
+                    I am 23 years old and I'm a eternal student, that always loves to getting new knowledge and skills. I'm dreaming to get a job as front-end developer in big tech company. That's why i'm here. I will do my best to become a great developer and obtain my
+                    current knowledge.
+                </p>
+            </section>
+            <section class="skills section-wrapper">
+                <h2 class="section__heading">skills</h2>
+                <ul class="skills-list">
+                    <li class="skill-list__item skill-list__item_html">html</li>
+                    <li class="skill-list__item skill-list__item_css">css</li>
+                    <li class="skill-list__item skill-list__item_js">javascript</li>
+                    <li class="skill-list__item skill-list__item_git">git</li>
+                    <li class="skill-list__item skill-list__item_figma">figma</li>
+                </ul>
+            </section>
+            <section class="code section-wrapper">
+                <h2 class="section__heading">Code example</h2>
+                <pre>
+                    <code>
+function nthFibo(n) {
+    const lastTwo = [0, 1];
+    let counter = 3;
+    while (counter &lt;= n) {
+        const nextFib = lastTwo[0] + lastTwo[1];
+        lastTwo[0] = lastTwo[1];
+        lastTwo[1] = nextFib;
+        counter++;
+    }
+    return n > 1 ? lastTwo[1] : lastTwo[0];
+}
+                    </code>                        
+                </pre>
+            </section>
+            <section class="projects section-wrapper">
+                <h2 class="section__heading">projects</h2>
+
+                <ul class="project-list">
+                    <li class="project-list__item">
+                        <a class="project-list__link" href="https://kidslime.github.io/beeinterns-main/">beeinterns</a>
+                    </li>
+                    <li class="project-list__item">
+                        <a class="project-list__link" href=" https://kidslime.github.io/portfolio/">portfolio</a>
+                    </li>
+
+                </ul>
+            </section>
+            <section class="courses section-wrapper">
+                <h2 class="section__heading">courses</h2>
+
+                <ul class="project-list">
+                    <li class="project-list__item">
+                        Stepik: Generation Python
+                    </li>
+                    <li class="project-list__item">
+                        CS50's Web Programming
+                    </li>
+
+                </ul>
+            </section>
+            <section class="education section-wrapper">
+                <h2 class="section__heading">education</h2>
+
+                Irkutsk National Research Technical University, Information Technology major
+
+
+            </section>
+            <section class="english section-wrapper">
+                <h2 class="section__heading">english</h2>
+
+                B1 - Pre-intermediate
+
+
+            </section>
+
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper footer__container">
+            <div class="left">
+                <span>&copy;</span><span>2022</span><a href="https://github.com/kidslime" class="github-link">github</a>
+            </div>
+            <div class="rs">
+                <a href="https://rs.school/js/" class="rs-link"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
